@@ -5,11 +5,11 @@ import {MainContainerComponent} from './main-container/main-container.component'
 export const routes: Routes = [
   {
     path: '',
-    component: MainContainerComponent, // Main container for the app
+    component: MainContainerComponent,
     children: [
-      { path: '', redirectTo: 'homepage', pathMatch: 'full' }, // Default route
-      { path: 'homepage', component: HomepageComponent, title: 'Convenio Home' }, // Homepage
+      { path: '', redirectTo: 'homepage', pathMatch: 'full' },
+      { path: 'homepage', component: HomepageComponent, title: 'Convenio Home' },
     ],
   },
-  { path: '**', redirectTo: 'homepage' }, // Wildcard redirect
+  { path: '**', redirectTo: 'homepage' },
 ];

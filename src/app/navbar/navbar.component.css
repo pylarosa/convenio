@@ -9,7 +9,6 @@
   align-items: center;
   background: whitesmoke;
   color: #eb690b;
-  padding: 0 20px; /* Padding for internal spacing */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000; /* Keep navbar above other elements */
   overflow: hidden; /* Prevent any overflow */
@@ -24,6 +23,7 @@
 
 .logo-image {
   height: 85px;
+  margin-left: 2rem;
 }
 
 /* Right Section */
@@ -31,6 +31,7 @@
   display: flex;
   align-items: center; /* Aligns Sign In and Language Dropdown vertically */
   gap: 20px; /* Adds space between Sign In and Language Dropdown */
+  margin-right: 2rem;
 }
 
 /* Dropdown Menu */
