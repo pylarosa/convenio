@@ -1,8 +1,8 @@
 import {Routes} from '@angular/router';
-import {HomepageComponent} from './homepage/homepage.component';
+import {NavbarComponent} from './navbar/navbar.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'homepage', pathMatch: 'full' }, // Match the entire path
-  { path: 'homepage', component: HomepageComponent, title: 'Homepage' },
-  { path: '**', redirectTo: 'homepage' }, // Fallback to the homepage
+  { path: '', redirectTo: 'homepage', pathMatch: 'full' },
+  { path: 'homepage', component: NavbarComponent, title: 'Homepage' },
+  { path: '**', redirectTo: 'homepage' }
 ];

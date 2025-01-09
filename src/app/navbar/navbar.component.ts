@@ -3,10 +3,10 @@ import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
+  templateUrl: './navbar.component.html',
   standalone: true,
-  styleUrl: './homepage.component.css'
+  styleUrl: './navbar.component.css'
 })
-export class HomepageComponent {
+export class NavbarComponent {
 
 }

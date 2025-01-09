@@ -1,0 +1,81 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #ffffff, #eb690b);
+  color: white;
+  padding: 0 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 86px;
+  margin-right: 10px;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Dropdown Section */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.dropdown-button:focus {
+  outline: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: white;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: none;
+  flex-direction: column;
+  min-width: 150px;
+  z-index: 1001;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Show/Hide */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
