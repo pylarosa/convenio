@@ -1,8 +1,15 @@
 import {Routes} from '@angular/router';
-import {NavbarComponent} from './navbar/navbar.component';
+import {HomepageComponent} from './pages/homepage/homepage.component';
+import {MainContainerComponent} from './main-container/main-container.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'homepage', pathMatch: 'full' },
-  { path: 'homepage', component: NavbarComponent, title: 'Homepage' },
-  { path: '**', redirectTo: 'homepage' }
+  {
+    path: '',
+    component: MainContainerComponent, // Main container for the app
+    children: [
+      { path: '', redirectTo: 'homepage', pathMatch: 'full' }, // Default route
+      { path: 'homepage', component: HomepageComponent, title: 'Convenio Home' }, // Homepage
+    ],
+  },
+  { path: '**', redirectTo: 'homepage' }, // Wildcard redirect
 ];

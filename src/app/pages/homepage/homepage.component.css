@@ -1,0 +1,7 @@
+.homepage {
+  flex: 1; /* Ensures the homepage content stretches in the main container */
+  padding: 20px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}

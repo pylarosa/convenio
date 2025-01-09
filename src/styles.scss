@@ -3,8 +3,21 @@
 :root {
   --font-family: Montserrat;
 }
+
 * {
   font-family: var(--font-family), sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
