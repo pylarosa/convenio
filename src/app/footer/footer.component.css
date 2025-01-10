@@ -5,7 +5,7 @@
   left: 0;
   height: var(--footer-height);
   width: 100vw;
-  background: var(--orange);
+  background: #de5f0678;
   color: white;
   display: flex;
   align-items: center;

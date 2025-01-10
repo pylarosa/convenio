@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh - 2 * var(--footer-height));
+  height: calc(100vh - var(--footer-height));
   background-size: cover;
   background-position: center;
   opacity: 0;
@@ -22,7 +22,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh - 2 * var(--footer-height));
+  height: calc(100vh - var(--footer-height));
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent gray */
   z-index: 9; /* Ensures it's above the image */
 }

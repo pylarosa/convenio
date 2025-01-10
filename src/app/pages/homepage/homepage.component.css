@@ -13,12 +13,49 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  width: 40%;
-  top: 50%;
-  left: 5%;
+  width: 35vw;
+  top: 0;
+  height: calc(100vh - 2 * var(--footer-height));
   color: antiquewhite;
-  position: absolute;
+  position: relative;
   z-index: 10;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
+  flex-wrap: wrap;
+  align-content: stretch;
 }
+
+.main-title {
+  font-size: 3rem
+}
+
+.main-paragraph {
+  font-size: 1.5rem;
+}
+
+.discover-button {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #eb690b75; /* Orange tone matching the footer */
+  border: none;
+  border-radius: 8px; /* Slightly rounded edges */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle depth */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  text-transform: uppercase; /* Capitalize text for boldness */
+}
+
+.discover-button:hover {
+  background-color: #d55a0a; /* Slightly darker orange on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+  transform: translateY(-2px); /* Gentle lift effect */
+}
+
+.discover-button:active {
+  transform: translateY(0); /* Pressed down effect */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
+
