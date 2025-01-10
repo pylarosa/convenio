@@ -13,7 +13,7 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  width: 35vw;
+  width: 40vw;
   top: 0;
   height: calc(100vh - 2 * var(--footer-height));
   color: antiquewhite;
@@ -35,7 +35,7 @@
 
 .discover-button {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 15px 70px;
   font-size: 1rem;
   font-weight: bold;
   color: white;

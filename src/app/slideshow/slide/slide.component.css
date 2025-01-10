@@ -8,7 +8,9 @@
   background-position: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  image-orientation: flip;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /* Active Slide */
@@ -17,35 +19,34 @@
   z-index: 1;
 }
 
-.slide .overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: calc(100vh - var(--footer-height));
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent gray */
-  z-index: 9; /* Ensures it's above the image */
+  background-color: rgb(73 18 0 / 44%);
+  z-index: 2;
 }
 
 /* Slide Text */
 .slide-text {
-  position: absolute;
-  top: 20%;
-  left: 75%;
-  transform: translate(-50%, -50%);
+  position: relative;
   text-align: center;
-  color: white;
-  z-index: 2; /* Above the overlay */
-}
-
-.slide-text h1 {
-  font-size: 3rem;
-  margin: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Improve readability */
+  color: antiquewhite;
+  z-index: 3;
+  background: #00000047;
+  height: 80px;
+  width: 45vw;
+  display: flex;
+  align-items: center;
+  margin-block-end: 20vh
 }
 
 .slide-text p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Improve readability */
+  font-size: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+  white-space: pre-line;
+  margin-left: 4rem;
 }
