@@ -1,38 +1,14 @@
 <div class="photo-slider">
-  <!-- Slides -->
-  <div class="slide" style="background-image: url('/slides/slide1-t.png');">
-    <div class="overlay"></div>
-    <div class="slide-content">
-      <h1>Welcome to Our Site</h1>
-      <button class="btn">Learn More</button>
-    </div>
-  </div>
-  <div class="slide" style="background-image: url('/slides/slide2-t.png');">
-    <div class="overlay"></div>
-    <div class="slide-content">
-      <h1>Explore Our Services</h1>
-      <button class="btn">Get Started</button>
-    </div>
-  </div>
-  <div class="slide" style="background-image: url('/slides/slide3-t.png');">
-    <div class="overlay"></div>
-    <div class="slide-content">
-      <h1>Contact Us Today</h1>
-      <button class="btn">Contact</button>
-    </div>
-  </div>
-  <div class="slide" style="background-image: url('/slides/slide4-t.png');">
-    <div class="overlay"></div>
-    <div class="slide-content">
-      <h1>Another</h1>
-      <button class="btn">Button</button>
-    </div>
-  </div>
-  <div class="slide" style="background-image: url('/slides/slide5-t.png');">
-    <div class="overlay"></div>
-    <div class="slide-content">
-      <h1>Another</h1>
-      <button class="btn">Button</button>
-    </div>
-  </div>
+  <app-slide [image]="'/slides/vacanza.png'"
+             [textInput]="'Organizzare la vacanza è più semplice e conveniente. \n offerte che ti fanno partire con il sorriso'"></app-slide>
+  <app-slide [image]="'/slides/ristorante.png'"
+             [textInput]="'Il piacere di mangiare fuori incontra il gusto del risparmio. \nBuon cibo, ottime offerte'"></app-slide>
+  <app-slide [image]="'/slides/disco.png'"
+             [textInput]="'Rendi le tue serate indimenticabili. \nDivertiti senza pensieri e approfitta delle migliori offerte locali'"></app-slide>
+  <app-slide [image]="'/slides/gastronomia.png'"
+             [textInput]="'Scopri sapori autentici e offerte esclusive con Convenio. \nUn’esperienza gastronomica da ricordare.'"></app-slide>
+  <app-slide [image]="'/slides/sauna.png'"
+             [textInput]="'Regalati un momento di relax a un prezzo speciale. \nBenessere accessibile a tutti.'"></app-slide>
+  <app-slide [image]="'/slides/cinema.png'"
+             [textInput]="'Il cinema e il teatro diventano ancora più accessibili. \nGoditi lo spettacolo, risparmiando'"></app-slide>
 </div>

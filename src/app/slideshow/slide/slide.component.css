@@ -1,0 +1,51 @@
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 2 * var(--footer-height));
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  image-orientation: flip;
+}
+
+/* Active Slide */
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 2 * var(--footer-height));
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent gray */
+  z-index: 9; /* Ensures it's above the image */
+}
+
+/* Slide Text */
+.slide-text {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2; /* Above the overlay */
+}
+
+.slide-text h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Improve readability */
+}
+
+.slide-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Improve readability */
+}

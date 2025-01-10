@@ -1,8 +1,11 @@
 import {Component, OnInit} from '@angular/core';
+import {SlideComponent} from './slide/slide.component';
 
 @Component({
   selector: 'app-slideshow',
-  imports: [],
+  imports: [
+    SlideComponent
+  ],
   templateUrl: './slideshow.component.html',
   standalone: true,
   styleUrl: './slideshow.component.css'

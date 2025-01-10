@@ -17,8 +17,9 @@
 
 .footer-left {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
   margin-block-end: 0;
   margin-block-start: 0;
   flex: 3 0 0;
@@ -72,7 +73,6 @@
   position: relative; /* Needed for positioning the pseudo-element */
   color: white;
   text-decoration: none; /* Remove default underline */
-  font-size: 0.9rem;
   overflow: hidden; /* Prevent the underline from overflowing */
 }
 
@@ -94,7 +94,7 @@
 .footer-center ul li a {
   color: white;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .footer-copyright {
