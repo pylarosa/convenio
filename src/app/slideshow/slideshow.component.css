@@ -1,12 +1,8 @@
-
-
-
-
 /* Photo Slider Container */
 .photo-slider {
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: -webkit-fill-available;
   overflow: hidden;
 }
 
@@ -29,6 +25,16 @@
   z-index: 1;
 }
 
+.slide .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent gray */
+  z-index: 9; /* Ensures it's above the image */
+}
+
 /* Slide Content (Text/Buttons) */
 .slide-content {
   position: absolute;
@@ -38,6 +44,7 @@
   text-align: center;
   color: white;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  z-index: 10;
 }
 
 .slide-content h1 {
@@ -46,7 +53,7 @@
 }
 
 .slide-content .btn {
-  background: #eb690b;
+  background: var(--orange);
   color: white;
   padding: 10px 20px;
   border: none;
