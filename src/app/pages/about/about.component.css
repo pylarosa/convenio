@@ -1,0 +1,84 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: rgba(239, 239, 239);
+  padding: 10vh 10vw;
+}
+
+.about-title {
+  font-size: 4rem;
+  font-weight: 700;
+  width: 80vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-container p {
+  margin: 0;
+}
+
+.about-subtitle {
+  font-size: 3.5rem;
+  font-weight: 400;
+  width: 80vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-body {
+  font-size: 1.3rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.right-side {
+  width: 36vw;
+  margin-inline-end: 12vw !important;
+}
+
+.left-side {
+  flex: 2 0 0;
+  margin-inline-end: 5vw !important;
+}
+
+.catch {
+  font-size: 2.5rem;
+  font-weight: 400;
+  width: 80vw;
+  display: flex;
+  justify-content: flex-start;
+  margin-block: 2rem;
+}
+
+
+.discover-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: .9rem;
+  font-weight: bold;
+  color: var(--white);
+  background-color: #fc6900; /* Orange tone matching the footer */
+  border: none;
+  border-radius: 8px; /* Slightly rounded edges */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle depth */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  text-transform: uppercase; /* Capitalize text for boldness */
+}
+
+.discover-button:hover {
+  background-color: var(--orange); /* Slightly darker orange on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+  transform: translateY(-2px); /* Gentle lift effect */
+}
+
+.discover-button:active {
+  transform: translateY(0); /* Pressed down effect */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}

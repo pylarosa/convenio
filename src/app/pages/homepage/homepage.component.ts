@@ -1,10 +1,12 @@
 import {Component} from '@angular/core';
 import {SlideshowComponent} from '../../slideshow/slideshow.component';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
   imports: [
-    SlideshowComponent
+    SlideshowComponent,
+    RouterLink
   ],
   templateUrl: './homepage.component.html',
   standalone: true,
