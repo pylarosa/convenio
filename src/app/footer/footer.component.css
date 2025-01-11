@@ -3,10 +3,10 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  height: var(--footer-height);
+  height: var(--height80px);
   width: 100vw;
   background: #de5f0678;
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@
   margin-block-end: 0;
   margin-block-start: 0;
   flex: 3 0 0;
-  height: var(--footer-height);
+  height: var(--height80px);
   justify-content: center;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .footer-center {
-  height: var(--footer-height);
+  height: var(--height80px);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -71,7 +71,7 @@
 
 .footer-center ul li a {
   position: relative; /* Needed for positioning the pseudo-element */
-  color: white;
+  color: var(--white);
   text-decoration: none; /* Remove default underline */
   overflow: hidden; /* Prevent the underline from overflowing */
 }
@@ -83,7 +83,7 @@
   bottom: -2px; /* Slightly below the text */
   width: 0; /* Initially, no underline is visible */
   height: 1px; /* Thickness of the underline */
-  background: white; /* Color of the underline */
+  background: var(--white); /* Color of the underline */
   transition: width 0.3s ease-in-out; /* Smooth animation */
 }
 
@@ -92,7 +92,7 @@
 }
 
 .footer-center ul li a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-size: 1rem;
 }
@@ -109,7 +109,7 @@
 .footer-right {
   display: flex;
   justify-content: flex-end;
-  height: var(--footer-height);
+  height: var(--height80px);
   flex: 2 0 0;
   align-items: center;
   margin-right: 2rem;

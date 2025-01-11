@@ -35,5 +35,16 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 export class SlideComponent {
   image = input.required()
   textInput = input.required()
+  marginBlockEnd = input("low")
   @Input() isActive!: Signal<boolean>;
+
+  getMarginValue() {
+    if (this.marginBlockEnd() === "high") {
+      return "80vh"
+    }
+    if (this.marginBlockEnd() === "medium") {
+      return "50vh"
+    }
+    return "30vh"
+  }
 }

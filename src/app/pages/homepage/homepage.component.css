@@ -1,7 +1,7 @@
 .homepage {
   flex: 1; /* Ensures the homepage content stretches in the main container */
   padding: 20px;
-  background: #f9f9f9;
+  background: var(--white);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
@@ -15,8 +15,8 @@
   padding: 20px;
   width: 40vw;
   top: 0;
-  height: calc(100vh - 2 * var(--footer-height));
-  color: antiquewhite;
+  height: calc(100vh - 2 * var(--height80px));
+  color: var(--white);
   position: relative;
   z-index: 10;
   font-size: 1.5rem;
@@ -31,6 +31,7 @@
 
 .main-paragraph {
   font-size: 1.5rem;
+  margin-block: 1.5rem;
 }
 
 .discover-button {
@@ -38,7 +39,7 @@
   padding: 15px 70px;
   font-size: 1rem;
   font-weight: bold;
-  color: white;
+  color: var(--white);
   background-color: #eb690b75; /* Orange tone matching the footer */
   border: none;
   border-radius: 8px; /* Slightly rounded edges */
@@ -49,7 +50,7 @@
 }
 
 .discover-button:hover {
-  background-color: #d55a0a; /* Slightly darker orange on hover */
+  background-color: var(--orange); /* Slightly darker orange on hover */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
   transform: translateY(-2px); /* Gentle lift effect */
 }

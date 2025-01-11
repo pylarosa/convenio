@@ -6,6 +6,7 @@
   <div class="overlay"></div>
   <div class="slide-text"
        [@slideInAnimation]="isActive() ? 'active' : 'inactive'"
+       [style.margin-block-end]="'calc(' + getMarginValue() + ' - 80px)'"
   >
     <p>{{ textInput() }}</p>
     <span style="width: 10vw"></span>
