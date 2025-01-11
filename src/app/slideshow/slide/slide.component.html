@@ -1,6 +1,12 @@
-<div class="slide" [style.background-image]="'url(' + image() + ')'">
+<div
+  class="slide"
+  [class.active]="isActive()"
+  [style.background-image]="'url(' + image() + ')'"
+>
   <div class="overlay"></div>
-  <div class="slide-text">
+  <div class="slide-text"
+       [@slideInAnimation]="isActive() ? 'active' : 'inactive'"
+  >
     <p>{{ textInput() }}</p>
     <span style="width: 10vw"></span>
   </div>

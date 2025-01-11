@@ -37,6 +37,7 @@ yarn-error.log
 testem.log
 /typings
 *.iml
+*.psd
 
 # System files
 .DS_Store

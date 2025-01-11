@@ -1,14 +1,11 @@
 <div class="photo-slider">
-  <app-slide [image]="'/slides/vacanza.png'"
-             [textInput]="'Organizzare la vacanza è più semplice e conveniente \n con offerte che ti fanno partire con il sorriso'"></app-slide>
-  <app-slide [image]="'/slides/ristorante.png'"
-             [textInput]="'Il piacere di mangiare fuori incontra il gusto del risparmio. \nBuon cibo, ottime offerte'"></app-slide>
-  <app-slide [image]="'/slides/disco.png'"
-             [textInput]="'Rendi le tue serate indimenticabili. \nDivertiti senza pensieri e approfitta delle migliori offerte locali'"></app-slide>
-  <app-slide [image]="'/slides/gastronomia.png'"
-             [textInput]="'Scopri sapori autentici e offerte esclusive con Convenio. \nUn’esperienza gastronomica da ricordare.'"></app-slide>
-  <app-slide [image]="'/slides/sauna.png'"
-             [textInput]="'Regalati un momento di relax a un prezzo speciale. \nBenessere accessibile a tutti.'"></app-slide>
-  <app-slide [image]="'/slides/cinema.png'"
-             [textInput]="'Il cinema e il teatro diventano ancora più accessibili. \nGoditi lo spettacolo, risparmiando'"></app-slide>
+  <div class="photo-slider">
+    <app-slide
+      *ngFor="let slide of slides; let i = index"
+      [image]="slide.image"
+      [textInput]="slide.text"
+      [isActive]="isSlideActive(i)"
+    ></app-slide>
+  </div>
 </div>
+

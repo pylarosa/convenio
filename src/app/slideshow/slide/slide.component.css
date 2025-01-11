@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: calc(100vh - var(--footer-height));
   background-size: cover;
   background-position: center;
@@ -50,3 +50,4 @@
   white-space: pre-line;
   margin-left: 4rem;
 }
+
